@@ -11,6 +11,10 @@
 		55401E0C28BE6FC8003174FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55401E0B28BE6FC8003174FB /* ContentView.swift */; };
 		55401E0E28BE6FC9003174FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55401E0D28BE6FC9003174FB /* Assets.xcassets */; };
 		55401E1128BE6FC9003174FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55401E1028BE6FC9003174FB /* Preview Assets.xcassets */; };
+		55401E1928BE73D1003174FB /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55401E1828BE73D1003174FB /* Pacifico-Regular.ttf */; };
+		55401E1E28BE77D0003174FB /* Lora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55401E1D28BE77D0003174FB /* Lora-Regular.ttf */; };
+		55401E2028BE78C7003174FB /* Lora-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55401E1F28BE78C7003174FB /* Lora-VariableFont_wght.ttf */; };
+		55401E2228BEC89B003174FB /* Infoview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55401E2128BEC89B003174FB /* Infoview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		55401E0B28BE6FC8003174FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		55401E0D28BE6FC9003174FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55401E1028BE6FC9003174FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		55401E1828BE73D1003174FB /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		55401E1A28BE75E5003174FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		55401E1D28BE77D0003174FB /* Lora-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Regular.ttf"; sourceTree = "<group>"; };
+		55401E1F28BE78C7003174FB /* Lora-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		55401E2128BEC89B003174FB /* Infoview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infoview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,11 @@
 		55401E0828BE6FC8003174FB /* LenCard */ = {
 			isa = PBXGroup;
 			children = (
+				55401E1A28BE75E5003174FB /* Info.plist */,
+				55401E1728BE73AD003174FB /* Fonts */,
 				55401E0928BE6FC8003174FB /* LenCardApp.swift */,
 				55401E0B28BE6FC8003174FB /* ContentView.swift */,
+				55401E2128BEC89B003174FB /* Infoview.swift */,
 				55401E0D28BE6FC9003174FB /* Assets.xcassets */,
 				55401E0F28BE6FC9003174FB /* Preview Content */,
 			);
@@ -65,6 +77,16 @@
 				55401E1028BE6FC9003174FB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		55401E1728BE73AD003174FB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				55401E1828BE73D1003174FB /* Pacifico-Regular.ttf */,
+				55401E1D28BE77D0003174FB /* Lora-Regular.ttf */,
+				55401E1F28BE78C7003174FB /* Lora-VariableFont_wght.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +147,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55401E2028BE78C7003174FB /* Lora-VariableFont_wght.ttf in Resources */,
+				55401E1928BE73D1003174FB /* Pacifico-Regular.ttf in Resources */,
+				55401E1E28BE77D0003174FB /* Lora-Regular.ttf in Resources */,
 				55401E1128BE6FC9003174FB /* Preview Assets.xcassets in Resources */,
 				55401E0E28BE6FC9003174FB /* Assets.xcassets in Resources */,
 			);
@@ -137,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55401E2228BEC89B003174FB /* Infoview.swift in Sources */,
 				55401E0C28BE6FC8003174FB /* ContentView.swift in Sources */,
 				55401E0A28BE6FC8003174FB /* LenCardApp.swift in Sources */,
 			);
@@ -270,6 +296,7 @@
 				DEVELOPMENT_TEAM = UTDP6766GL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LenCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +326,7 @@
 				DEVELOPMENT_TEAM = UTDP6766GL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LenCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
